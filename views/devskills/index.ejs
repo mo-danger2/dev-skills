@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2 Assessment</title>
+    <link rel="stylesheet" href="../../styles.css" >
+</head>
+<body>
+    <h1>Dev Skills List</h1>
+    <li>
+        <% for(let d of devSkills) { %>
+         <%= d.devskill %>  - <%= d.done %>
+       <% } %> 
+       <br>
+       <form action="/devSkills" method="POST" autocomplete="off">
+        <input type="text" name="devSkills">
+        <button type="submit">Save DevSkills</button>
+      </form>
+          
+      
+      
+    </li>
+</body>
+</html>
